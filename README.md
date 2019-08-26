@@ -6,15 +6,18 @@ Requisitos:
 
     Maven    
     Java JDK 8
-    Baixar o Kafka no endereço: https://kafka.apache.org/downloads
+    Kafka_2.12-2.3.0
 
 Subir o serviço Kafka:
     
-    1) Descompactar o Kafka no Sistema Operacional
-    2) Entrar pelo terminal na raiz do Kafka descompactado e iniciar os serviços com os comandos:
+    1) Baixar o Kafka no endereço: https://kafka.apache.org/downloads e descompactar no Sistema Operacional
+    2) Entrar pelo terminal na raiz do Kafka descompactado e iniciar os serviços em terminais distintos com os comandos:
 
     terminal 1: bin/zookeeper-server-start.sh config/zookeeper.properties
     terminal 2: bin/kafka-server-start.sh config/server.properties
+
+Nota: O Apache Zookeeper é um serviço centralizado para manter informações de configurações e nomenclaturas entre serviços distribuídos. 
+      O Kafka utiliza o Zookeeper para sincronizar as configurações entre diferentes clusters.
 
 Criar o tópico de mensagem 'myTopic' com o comando:
         
