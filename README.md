@@ -20,7 +20,7 @@ Subir o serviço Kafka:
 
 #### Nota: O Apache Zookeeper é um serviço centralizado para manter informações de configurações e nomenclaturas entre serviços distribuídos. O Kafka utiliza o Zookeeper para sincronizar as configurações entre diferentes clusters.
 
-Criar o tópico de mensagem 'myTopic' com o comando:
+Criar um console listener para o tópico de mensagem 'myTopic' com o comando:
         
     terminal 3: bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic myTopic
 

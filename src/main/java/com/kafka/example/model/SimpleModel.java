@@ -29,4 +29,11 @@ public class SimpleModel {
         this.descricao = descricao;
     }
 
+    @Override
+    public String toString() {
+        return "SimpleModel{" +
+                "titulo='" + titulo + '\'' +
+                ", descricao='" + descricao + '\'' +
+                '}';
+    }
 }
